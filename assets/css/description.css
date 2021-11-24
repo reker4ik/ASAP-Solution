@@ -1,0 +1,124 @@
+.description {
+    background:#00053B;
+    padding: 40px 0;
+}
+.single-description {
+    width: calc(33.333% - 53px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.single-description:nth-child(1) {
+    margin-bottom: 42px;
+}
+.single-description p {
+    font-family: "Anton" , sans-serif;
+    font-size: 24px;
+    line-height: 1.27em;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 3.50079px 0.875197px rgba(0, 0, 0, 0.4);
+    transform: matrix(0.98, 0, -0.21, 1, 0, 0);
+    text-align: center;
+}
+.single-description svg {
+    margin-bottom: 18px;
+}
+.description-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.title-description {
+    margin-bottom: 40px;
+}
+.title-description h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.2em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.title-description h2 span {
+    color: #fa8a00;
+}
+.title-description p {
+    font-weight: 500;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.title-description p span {
+    font-size: 20px;
+    position: absolute;
+    top: 32px;
+}
+.single-description:hover svg > path {
+        box-shadow: 0px 0px 15px 15px rgba(250, 72, 0, 0.2);
+        transition: 0.3s ease;
+}
+@media (max-width: 1024px) {
+    .title-description h2{
+        font-size: 23px;
+    }
+    .title-description p {
+        font-size: 23px;
+    }
+    .title-description p span {
+        top: 27px;
+    }
+}
+@media (max-width: 767px) {
+    .single-description {
+        width: 100%;
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+    .single-description svg {
+        margin-bottom: unset;
+        margin-right: 23px;
+    }
+    .single-description:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .description-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-description p {
+        font-size: 19px;
+    }
+    .title-description p span {
+        display: none;
+    }
+    .title-description h2 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .title-description p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 479px) {
+    .title-description p {
+        font-size: 14px;
+    }
+    .single-description {
+        flex-direction: column;
+    }
+    .single-description p {
+        margin-top: 20px;
+    }
+    .single-description svg {
+        margin-right: unset;
+    }
+    .description {
+        padding: 40px 0 70px;
+    }
+}

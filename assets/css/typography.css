@@ -1,0 +1,33 @@
+h1 {
+    font-family: "Anton" , sans-serif;
+    font-weight: normal;
+    font-size: 72.5418px;
+    line-height: 1.47em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+}
+h2 {
+    font-weight: 600;
+    font-size: 33.5816px;
+    line-height: 1.24em;
+    color: #fff;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+@media (max-width: 581px) {
+    h1 {
+        font-size: 55.5418px;
+    }
+    h2 {
+        font-size: 25.5816px;
+    }
+}
+@media (max-width: 479px) {
+    h1 {
+        font-size: 36.5418px;
+    }
+    h2 {
+        font-size: 16.5816px;
+    }
+}
